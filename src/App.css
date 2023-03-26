@@ -1,38 +1,122 @@
-.App {
-  text-align: center;
+*{
+margin: 0%;
+padding: 0%;
+box-sizing: border-box;
+}
+body{
+    background-color: rgb(205, 238, 255);
+    width: 100vw;
+    overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+
+/*               NavBar          */
+#MyNavBar{
+    position: relative;
+    flex-direction: row;
+    background-color: rgb(0 170 255);
+
+    width: 100vw;
+    height: 12vh;
+    min-height: 70px;
+    
+}
+#TitleNavBar{
+    display: inline;
+    font-size: 3vw;
+    text-decoration: none;
+    color: blue;
+    margin-left: 2vw;
+    text-shadow: 3px 1px 2px #000;
+
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+/*          color picker              */
+#ColorPicker{
+display: flex;
+position: absolute;
+top: 3vh;
+right: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#ModeChange{
+padding: 4px; 
+border-radius: 7px;   
 }
 
-.App-link {
-  color: #61dafb;
+
+
+/*           Text area here               */
+
+#TextArea{   
+    width: 80vw;
+    height: 50vh;
+}
+#TextAreaContainer{
+    margin-top: 10vh;
+    display: flex;
+    align-items: center; 
+    justify-content: center;   
+}
+#ButtonConatiner{
+     min-height: 100px;
+
+     height: 10vh; 
+    display: flex;
+    align-items: center; 
+    justify-content: center;   
+}
+#ButtonConatiner>button{
+    
+    border-radius: 8px;
+    padding: 4px;
+    cursor: pointer;
+    margin-right: 25px;
+    margin-left: 25px;
+
+}
+#ButtonConatiner>button:hover{
+    background-color: rgb(32, 140, 212);
+    color: aliceblue;
+    border: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#PreviewArea{
+
+    width: 80vw;
+    margin-left: 10vw;
+    padding-left: 4px;
+
+}
+
+#PreviewPara{
+padding-left: 15px;
+padding-right: 15px;
+
+
+}
+#PreviewAreaTitle{
+    text-align: left;
+}
+
+#TextAnalysis{
+    padding-left: 10vw;
+}
+
+#TextAnalysis>p{
+text-transform: capitalize;
+    padding-left: 15px;
+
+
+}
+
+
+#notfound{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
